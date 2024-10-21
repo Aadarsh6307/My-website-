@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entertainment Hub</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: #1a1a1a;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 2em;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 80px;
+            background: #222;
+            padding: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.2em;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        .page {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            transition: all 1s ease-in-out;
+        }
+
+        #home {
+            background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+            animation: fadeIn 2s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .content {
+            text-align: center;
+            padding: 50px;
+            max-width: 800px;
+            animation: slideIn 1s ease-in-out;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(100px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        footer {
+            background: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Animation on hover for the entire section */
+        .page:hover {
+            background-color: #fff;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        Entertainment Hub
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#movies">Movies</a>
+        <a href="#music">Music</a>
+        <a href="#games">Games</a>
+        <a href="#about">About Us</a>
+    </nav>
+
+    <!-- Pages -->
+    <div id="home" class="page">
+        <div class="content">
+            <h1>Welcome to Entertainment Hub</h1>
+            <p>Explore the latest in movies, music, and games with amazing visuals and animations.</p>
+        </div>
+    </div>
+
+    <div id="movies" class="page" style="background-color: #333;">
+        <div class="content">
+            <h1>Latest Movies</h1>
+            <p>Check out the latest blockbusters and timeless classics.</p>
+        </div>
+    </div>
+
+    <div id="music" class="page" style="background-color: #ffcc00;">
+        <div class="content">
+            <h1>Music for Every Mood</h1>
+            <p>Listen to top hits, new albums, and discover upcoming artists.</p>
+        </div>
+    </div>
+
+    <div id="games" class="page" style="background-color: #66ccff;">
+        <div class="content">
+            <h1>Play Exciting Games</h1>
+            <p>From puzzles to action, find games that will keep you entertained.</p>
+        </div>
+    </div>
+
+    <div id="about" class="page" style="background-color: #bada55;">
+        <div class="content">
+            <h1>About Us</h1>
+            <p>We are passionate about bringing the best in entertainment right to your fingertips.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Entertainment Hub. All rights reserved.
+    </footer>
+
+</body>
+</html>
